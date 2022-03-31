@@ -1,4 +1,7 @@
-<div class="container","textbase">
+<%# Card de base %>
+
+<div class="container " "textbase">
+
 
   <div id="<%= dom_id siteweb %>">
     <p>
@@ -7,26 +10,26 @@
 
     </p>
 
-    <p class="titredusite">
+    <p class= "titredusite textbase">
       <strong> <%= siteweb.name %> </strong>
 
     </p>
 
-    <p class="tagsite">
+    <p class="tagsite textbase">
       <strong>Tag:</strong>
       <%= siteweb.tag %>
     </p>
 
     <p>
 
-      <p><a class="lienhypertextesite" href="#"><%= siteweb.url %></a></p>
+      <p class="textbase"><a class="lienhypertextesite textbase" href="#"><%= siteweb.url %></a></p>
 
     </p>
 
-    <p>
+    <p class="textbase">
       <strong>Description:</strong>
       <%= siteweb.description %>
     </p>
-
+    </div>
   </div>
 </div>

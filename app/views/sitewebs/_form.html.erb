@@ -1,3 +1,8 @@
+<%# Formulaire Modif / Créer %>
+
+
+
+<div class="">
 <%= form_with(model: siteweb) do |form| %>
   <% if siteweb.errors.any? %>
     <div style="color: red">
@@ -39,4 +44,6 @@
   <div>
     <%= form.submit %>
   </div>
+
 <% end %>
+</div>

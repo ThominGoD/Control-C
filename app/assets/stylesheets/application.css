@@ -18,6 +18,9 @@
    License: none (public domain)
 */
 
+@import "bootstrap";
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -89,7 +92,7 @@ table {
  }
 
  .fond {
-  background-color: #2C3445;
+  background-color: #050608;
  }
 
  .titredusite {
@@ -98,12 +101,10 @@ table {
  }
 
  .tagsite{
-   font-family: "Comic sans ms";
    font-size: small;
  }
 
  .modif {
-  text-decoration: none;
   color: #00b77a;
   font-size: medium;
   background-color: #d60737;
@@ -114,9 +115,17 @@ table {
  }
 
  .textbase {
-   padding-top: 1vw;
+   margin-top: 1vw;
  }
 
  .body {
    width: 100%;
+ }
+
+ .ousuisje {
+   background-color: #3cff00;
+ }
+
+ .imgprincip {
+   width: 5vw;
  }
