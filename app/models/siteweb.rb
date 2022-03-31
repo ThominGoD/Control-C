@@ -1,0 +1,2 @@
+class Siteweb < ApplicationRecord
+end

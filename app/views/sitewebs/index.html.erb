@@ -1,0 +1,19 @@
+<div class="container1">
+
+<p style="color: green"><%= notice %></p>
+
+<h1 class="titre">Ctrl+C </h1>
+
+<div class="modif" id="sitewebs">
+  <% @sitewebs.each do |siteweb| %>
+    <%= render siteweb %>
+    <p>
+      <%= link_to "Show this siteweb", siteweb %>
+    </p>
+  <% end %>
+</div>
+  <div class="modif">
+<%= link_to "New siteweb", new_siteweb_path %>
+
+  </div>
+</div>
