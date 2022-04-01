@@ -1,17 +1,19 @@
 <%# Formulaire de création %>
 
 
-<div class="">
+<div class="bg base">
 
 
-<h1>Nouveau site web</h1>
+<h1 class='titre'>Nouveau site web</h1>
 
+<div class=''>
 <%= render "form", siteweb: @siteweb %>
+</div>
 
 <br>
 
 <div>
-  <%= link_to "Back to sitewebs", sitewebs_path %>
+  <button class='btn'> <%= link_to "Retour", sitewebs_path %> </button>
 </div>
 
 </div>

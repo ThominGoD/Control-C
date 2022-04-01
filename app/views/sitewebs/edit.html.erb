@@ -1,16 +1,18 @@
 <%# Formulaire de Modif %>
 
 
-<div class="">
+<div class="formulaire bg">
 
 <h1 class='titre'>Modifier le site web</h1>
 
+<div class='marg'>
 <%= render "form", siteweb: @siteweb %>
-
-<br>
+</div>
 
 <div>
-  <%= link_to "Show this siteweb", @siteweb %> |
-  <%= link_to "Back to sitewebs", sitewebs_path %>
+  <button class='btn'> <%= link_to "Montrer le site web", @siteweb %></button>
+
+  <button class='btn'> <%= link_to "Retour", sitewebs_path %> </button>
+
 </div>
 </div>

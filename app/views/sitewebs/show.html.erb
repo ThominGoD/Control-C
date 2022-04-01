@@ -1,16 +1,16 @@
 <%# Lien entre les liens %>
 
-<div class="">
+<div class="bg">
 
 <p style="color: green"><%= notice %></p>
 
 <%= render @siteweb %>
 
 <div>
-  <%= link_to "Edit this siteweb", edit_siteweb_path(@siteweb) %> |
-  <%= link_to "Back to sitewebs", sitewebs_path %>
+  <button class='btn decal'> <%= link_to "Modifier le site", edit_siteweb_path(@siteweb) %> </button>
+  <button class='btn decal'> <%= link_to "Retour", sitewebs_path %> </button>
+    <%= button_to "Supprimer ce site web", @siteweb, method: :delete, class:"newwebsite decal" %>
 
-  <%= button_to "Destroy this siteweb", @siteweb, method: :delete %>
 </div>
 
 </div>

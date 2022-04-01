@@ -1,22 +1,23 @@
 <%# Hors de la card %>
 
 
-<div class="fond ">
+<div class="bg">
 
 <p style="color: green"><%= notice %></p>
 
-<img class='imgprincip'alt='logo control+c'src="https://pbs.twimg.com/profile_images/471028351797174272/t5sIKSMd_400x400.jpeg">
+<div class='center'>
+</div>
 
-<div class="modif" id="sitewebs">
+<div class="modif padd" id="sitewebs">
   <% @sitewebs.each do |siteweb| %>
     <%= render siteweb %>
     <p>
-      <%= link_to "Show this siteweb", siteweb %>
+      <button class='btn decal'> <%= link_to "Montrer le site web", siteweb %> </button>
     </p>
   <% end %>
 </div>
   <div class="modif">
-<%= link_to "New siteweb", new_siteweb_path %>
+ <%= link_to "Créer un nouveau site web", new_siteweb_path, class:"newwebsite decal" %>
 
   </div>
 </div>

@@ -2,7 +2,7 @@
 
 
 
-<div class="">
+<div class="bg">
 <%= form_with(model: siteweb) do |form| %>
   <% if siteweb.errors.any? %>
     <div style="color: red">
@@ -16,34 +16,37 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :image, style: "display: block" %>
-    <%= form.text_area :image %>
+  <div class='marg restform '>
+    <%= form.label :Lien_de_l_image, style: "display: block", class:"magb" %>
+    <%= form.text_area :image, class:"magb textarea" %>
   </div>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class='marg restform '>
+    <%= form.label :Nom, style: "display: block", class:"magb" %>
+    <%= form.text_field :name, class:"magb" %>
   </div>
 
-  <div>
-    <%= form.label :tag, style: "display: block" %>
-    <%= form.text_field :tag %>
+  <div class='marg restform '>
+    <%= form.label :tag, style: "display: block", class:"magb" %>
+    <%= form.text_field :tag , class:"magb"%>
   </div>
 
-  <div>
-    <%= form.label :url, style: "display: block" %>
-    <%= form.text_area :url %>
+  <div class='marg restform '>
+    <%= form.label :url_du_site_web, style: "display: block", class:"magb" %>
+    <%= form.text_area :url , class:"magb textarea"%>
   </div>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+  <div class='marg restform'>
+    <%= form.label :description, style: "display: block", class:"magb" %>
+    <%= form.text_area :description , class:"magb descri"%>
   </div>
 
-  <div>
+  <div class='marg submit'>
     <%= form.submit %>
+
   </div>
 
+  <div class='marg '>
 <% end %>
+</div>
 </div>
