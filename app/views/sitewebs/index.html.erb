@@ -5,18 +5,20 @@
 
 <p style="color: green"><%= notice %></p>
 
-<div class='center'>
+<div class='center '>
 </div>
 
-<div class="modif padd" id="sitewebs">
+<div class="modif padd " id="sitewebs">
+  <div class=''>
   <% @sitewebs.each do |siteweb| %>
     <%= render siteweb %>
-    <p>
-      <button class='btn decal'> <%= link_to "Montrer le site web", siteweb %> </button>
+  </div>
+    <p class='bg'>
+      <button class='btn decal'> <%= link_to "Voir le site web", siteweb %> </button>
     </p>
   <% end %>
 </div>
-  <div class="modif">
+  <div class="modif center">
  <%= link_to "Créer un nouveau site web", new_siteweb_path, class:"newwebsite decal" %>
 
   </div>

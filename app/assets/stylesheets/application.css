@@ -65,11 +65,12 @@ table {
 	border-spacing: 0;
 }
 
+
+
 .bg{
   background-color: #050608;
   height: 100%;
 }
-
 
 
  .base{
@@ -191,12 +192,15 @@ table {
 
 .newwebsite {
   display: inline-block;
+  background: #00b77a;
+  color: #FDFFFE;
+  padding: 5px;
+  line-height: 1.5;
   border: none;
   padding: 0.5vw 1vw;
   text-decoration: none;
-  background: #00b77a;
   font-family: 'Poppins';
-  font-size: 1vw;
+  font-size: 1.1vw;
   text-align: center;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -208,7 +212,7 @@ table {
   display: flex;
   flex-wrap: wrap-reverse;
   height: 50%;
-  width: 50%;
+  width: 70%;
 }
 
 .magb{
@@ -250,4 +254,20 @@ input {
   border-radius: 5px;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px #7952B3;
+}
+
+.envoyer{
+  background: #00b77a;
+  color: #FDFFFE;
+  padding: 5px;
+  width: 70%;
+  align-items: center;
+  font-family: 'Poppins';
+  line-height: 1.5;
+}
+
+.refresh {
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
 }

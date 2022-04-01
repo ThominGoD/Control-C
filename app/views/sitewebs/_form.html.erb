@@ -2,7 +2,7 @@
 
 
 
-<div class="bg">
+<div class="bg ">
 <%= form_with(model: siteweb) do |form| %>
   <% if siteweb.errors.any? %>
     <div style="color: red">
@@ -42,8 +42,7 @@
   </div>
 
   <div class='marg submit'>
-    <%= form.submit %>
-
+    <%= form.submit "Modifier site web", class:"envoyer refresh"%>
   </div>
 
   <div class='marg '>

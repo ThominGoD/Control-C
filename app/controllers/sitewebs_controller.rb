@@ -25,7 +25,7 @@ class SitewebsController < ApplicationController
 
     respond_to do |format|
       if @siteweb.save
-        format.html { redirect_to siteweb_url(@siteweb), notice: "Siteweb was successfully created." }
+        format.html { redirect_to siteweb_url(@siteweb), notice: "Le site a bien été créer." }
         format.json { render :show, status: :created, location: @siteweb }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class SitewebsController < ApplicationController
   def update
     respond_to do |format|
       if @siteweb.update(siteweb_params)
-        format.html { redirect_to siteweb_url(@siteweb), notice: "Siteweb was successfully updated." }
+        format.html { redirect_to siteweb_url(@siteweb), notice: "Le site a bien été mis à jour." }
         format.json { render :show, status: :ok, location: @siteweb }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class SitewebsController < ApplicationController
     @siteweb.destroy
 
     respond_to do |format|
-      format.html { redirect_to sitewebs_url, notice: "Siteweb was successfully destroyed." }
+      format.html { redirect_to sitewebs_url, notice: "Le site a été supprimer." }
       format.json { head :no_content }
     end
   end
